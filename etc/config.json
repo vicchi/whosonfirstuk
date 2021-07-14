@@ -1,0 +1,587 @@
+{
+  "countries": {
+    "ONS:GSS:E92": "ONS:GSS:E92000001",
+    "ONS:GSS:N92": "ONS:GSS:N92000002",
+    "ONS:GSS:S92": "ONS:GSS:S92000003",
+    "ONS:GSS:W92": "ONS:GSS:W92000004"
+  },
+  "overrides": {
+    "ONS:GSS:E05011393": {
+      "admin": "ONS:GSS:E08000035"
+    },
+    "ONS:GSS:E05011412": {
+      "admin": "ONS:GSS:E08000035"
+    },
+    "ONS:GSS:E07000150": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000151": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000152": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000153": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000154": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000155": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E07000156": {
+      "admin": "ONS:GSS:E10000021"
+    },
+    "ONS:GSS:E10000021": {
+      "admin": "ONS:GSS:E12000004"
+    },
+    "ONS:GSS:S01007543": {
+      "admin": "ONS:GSS:S12000006"
+    },
+    "ONS:GSS:N00000217": {
+      "admin": "ONS:GSS:N09000011"
+    }
+  },
+  "sanitise": {
+    "ONS:GSS:E43": {
+      "pattern": ", unparished area$",
+      "repl": ""
+    }
+  },
+  "mappings": {
+    "ONS:GSS:E00": {
+      "placetype": "census",
+      "parents": {
+        "admin": [],
+        "census": [
+          "ONS:GSS:E01"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E01": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E06",
+          "ONS:GSS:E07",
+          "ONS:GSS:E08",
+          "ONS:GSS:E09"
+        ],
+        "census": [
+          "ONS:GSS:E02"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E02": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E06",
+          "ONS:GSS:E07",
+          "ONS:GSS:E08",
+          "ONS:GSS:E09"
+        ],
+        "census": [
+          "ONS:GSS:E92"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E04": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E06",
+          "ONS:GSS:E07",
+          "ONS:GSS:E08",
+          "ONS:GSS:E09"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E05": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E06",
+          "ONS:GSS:E07",
+          "ONS:GSS:E08",
+          "ONS:GSS:E09"
+        ],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:E14"
+        ]
+      }
+    },
+    "ONS:GSS:E06": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E12"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E07": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E10"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E08": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E11"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E09": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E61"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E10": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E12"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E11": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E12"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E12": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E92"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E14": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:E15"
+        ]
+      }
+    },
+    "ONS:GSS:E15": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:E92"
+        ]
+      }
+    },
+    "ONS:GSS:E32": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:E92"
+        ]
+      }
+    },
+    "ONS:GSS:E43": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E06",
+          "ONS:GSS:E07",
+          "ONS:GSS:E08",
+          "ONS:GSS:E09"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E47": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E12"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E61": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:E12"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:E92": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "NISRA:OA:95": {
+      "placetype": "census",
+      "parents": {
+        "admin": [],
+        "census": [
+          "ONS:GSS:N00"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:N00": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:N09"
+        ],
+        "census": [
+          "NISRA:SOA:95"
+        ],
+        "electoral": []
+      }
+    },
+    "NISRA:SOA:95": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:N09"
+        ],
+        "census": [
+          "ONS:GSS:N92"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:N06": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:N07"
+        ]
+      }
+    },
+    "ONS:GSS:N07": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:N92"
+        ]
+      }
+    },
+    "ONS:GSS:N08": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [
+          "ONS:GSS:N09"
+        ],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:N06"
+        ]
+      }
+    },
+    "ONS:GSS:N09": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:N92"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:N10": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:N92"
+        ]
+      }
+    },
+    "ONS:GSS:N92": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:S00": {
+      "placetype": "census",
+      "parents": {
+        "admin": [],
+        "census": [
+          "ONS:GSS:S01"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:S01": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:S12"
+        ],
+        "census": [
+          "ONS:GSS:S02"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:S02": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:S12"
+        ],
+        "census": [
+          "ONS:GSS:S92"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:S12": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:S92"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:S13": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [
+          "ONS:GSS:S12"
+        ],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:S14"
+        ]
+      }
+    },
+    "ONS:GSS:S14": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:S15"
+        ]
+      }
+    },
+    "ONS:GSS:S15": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:S92"
+        ]
+      }
+    },
+    "ONS:GSS:S16": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:S17"
+        ]
+      }
+    },
+    "ONS:GSS:S17": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:S92"
+        ]
+      }
+    },
+    "ONS:GSS:S92": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W00": {
+      "placetype": "census",
+      "parents": {
+        "admin": [],
+        "electoral": [],
+        "census": [
+          "ONS:GSS:W01"
+        ]
+      }
+    },
+    "ONS:GSS:W01": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W06"
+        ],
+        "census": [
+          "ONS:GSS:W02"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W02": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W06"
+        ],
+        "census": [
+          "ONS:GSS:W03"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W03": {
+      "placetype": "census",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W06"
+        ],
+        "census": [
+          "ONS:GSS:W92"
+        ],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W04": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W05"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W05": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W06"
+        ],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:W07"
+        ]
+      }
+    },
+    "ONS:GSS:W06": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [
+          "ONS:GSS:W92"
+        ],
+        "census": [],
+        "electoral": []
+      }
+    },
+    "ONS:GSS:W07": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:W08"
+        ]
+      }
+    },
+    "ONS:GSS:W08": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:W92"
+        ]
+      }
+    },
+    "ONS:GSS:W09": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:W10"
+        ]
+      }
+    },
+    "ONS:GSS:W10": {
+      "placetype": "electoral",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": [
+          "ONS:GSS:W92"
+        ]
+      }
+    },
+    "ONS:GSS:W92": {
+      "placetype": "admin",
+      "parents": {
+        "admin": [],
+        "census": [],
+        "electoral": []
+      }
+    }
+  }
+}
