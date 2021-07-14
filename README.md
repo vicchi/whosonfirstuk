@@ -4,6 +4,8 @@ Early stages of creating a set of [Who's On First](https://whosonfirst.org) data
 
 Right now, this repo contains scripts to normalise and merge data sets into a single PostGIS table, creating parent and child relationships for administrative, census and electoral hierarchies.
 
+This repo is open source and is licensed under the BSD 2-clause licence (`BSD-2-Clause`); see [LICENSE.txt](LICENSE.txt).
+
 ## Supported Environments
 
 The scripts and pipeline in this repository have been run and tested on both macOS 11.4 Big Sur and on Ubuntu 20.04 LTS and should, in theory, work just fine on other Linux distros too. YMMV of course.
